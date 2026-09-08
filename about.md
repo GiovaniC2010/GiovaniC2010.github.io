@@ -6,5 +6,5 @@ I like to work with electronics and creating original projects. one of my goals 
 ## Navigation
 
 [Click here to go to my notebook → Notebook](notebook.md)
-
+  
 [Home](index.md)
