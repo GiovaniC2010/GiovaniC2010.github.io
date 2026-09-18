@@ -1,7 +1,7 @@
 ## Table of Contents
 
 - [Blocks](#blocks)
-- [Concepts](#concepts)
+- [Concepts](#concepts)  
 - [Vocabulary](#vocabulary)
 
 ---  
