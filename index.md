@@ -4,7 +4,7 @@
 
 ### 🤖 Herbie — Desktop Robot Companion
 - **Tech Stack:** Raspberry Pi 4, ESP32-S3, Touch LCD, Python, C++
-- **Description:** A custom desktop companion robot powered by a Python server running on a Raspberry Pi 4 paired with an ESP32-S3 touch screen unit for dynamic UI interaction and control.
+- **Description:** A custom desktop companion robot powered by a Python server running on a Raspberry Pi 4 paired with an ESP32-S3 touch screen unit for dynamic UI interaction and control. 
 
 ### ♟️ Lenny — Smart Chess & Interactive Bot
 - **Tech Stack:** ESP32, GC9A01 Round Displays, Servo Motors, MCU-MAX Chess Engine
