@@ -1,5 +1,7 @@
 Welcome to My Portfolio Hello! My name is GC.
+
 Projects
+
 ♟️ Lenny — Smart Chess & Interactive Bot
 What Was Used: ESP32, GC9A01 Round Displays, Piezo Speaker, MCU-MAX Chess Engine
 
