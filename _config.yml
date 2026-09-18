@@ -6,4 +6,4 @@ baseurl: "" # leave empty since this is your user page
 
 url: "https://GiovaniC2010.github.io" # replace YOURUSERNAME with your GitHub username
 
-theme: jekyll-theme-Hacker # replace “merlot” with your chosen theme from the list
+theme: jekyll-theme-wildcat # replace “merlot” with your chosen theme from the list
