@@ -16,7 +16,7 @@
 ![LED Keychains](images/keychain.png)
 - **What Was Used:** KiCad 9,  
 - **Description:** Custom boxing-themed keychains designed on a custom printed circuit board in KiCad, powered via an integrated USB-A connector with edge-lit LEDs. 
-
+  
 ---    
 
 ## About Me
