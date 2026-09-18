@@ -2,7 +2,7 @@
 
 ## Projects
 
-### ♟️ Lenny — Smart Chess & Interactive Bot
+### ♟️ Lenny — Smart Chess & Interactive Bot 
 <img src="images/lenny.png" width="300">
 
 - **What Was Used:** ESP32, GC9A01 Round Displays, Piezo Speaker, MCU-MAX Chess Engine
