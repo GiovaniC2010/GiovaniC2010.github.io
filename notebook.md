@@ -7,7 +7,7 @@
   - [Headings](#headings)
   - [Text Formatting](#text-formatting)
 
----
+--- 
 
 ## Blocks
 
