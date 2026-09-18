@@ -1,10 +1,12 @@
 # About Me
 
-Hello! I am GC.
+Hello! I'm GC.
 
-I like to work with electronics and creating original projects. one of my goals is to graduate high school with as much cords as i can get. I do CAD work mainly with pcb making and 3d printing 
+I like working with electronics and building my own projects. One of my big goals is to graduate high school with as many cords as I can get. I also do CAD work, mainly for making custom PCBs and 3D printing.
+
+---
+
 ## Navigation
- 
-[Notebook](notebook.md)
-    
-[Home](index.md)
+
+- [Notebook](notebook.md)
+- [Home](index.md)
