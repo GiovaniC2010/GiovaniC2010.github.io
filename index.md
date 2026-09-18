@@ -11,7 +11,7 @@
 - **Description:** A 3D soldering simulator featuring thermal transfer physics, solder wire melting, flux smoke particle systems, component lead trimming, and fume extraction mechanics.
  
 ### ⚡ Custom Boxing Gym LED Keychains
-- **What Was Used:** KiCad 9, Custom PCB Design, USB-A Connector
+- **What Was Used:** KiCad 9, 
 - **Description:** Custom boxing-themed keychains designed on a custom printed circuit board in KiCad, powered via an integrated USB-A connector with edge-lit LEDs.
 
 ---  
