@@ -1,7 +1,7 @@
 # Welcome to My Portfolio  
 Hello! My name is Giovani. I am a high school junior and builder focused on robotics, embedded systems, microcontrollers, and creative technology.
 
----
+---  
  
 ## Table of Contents
 - [Featured Robotics Projects](#featured-robotics-projects)
