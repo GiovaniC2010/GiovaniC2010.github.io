@@ -6,7 +6,7 @@
 
 ---
 
-## Blocks
+## Blocks 
 
 ### Hat Block
 - **Name:** Hat Block
