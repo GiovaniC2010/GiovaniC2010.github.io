@@ -7,7 +7,7 @@
 ---  
 
 ## Blocks 
-
+  
 ### Hat Block
 - **Name:** Hat Block
 - **Shape/Type:** Hat shape (rounded top, notch on the bottom)
