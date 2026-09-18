@@ -8,7 +8,7 @@
 
 ## Blocks 
   
-### Hat Block
+### Hat Block  
 - **Name:** Hat Block
 - **Shape/Type:** Hat shape (rounded top, notch on the bottom)
 - **What It Does:** Starts a script when a specific event triggers it. It always goes at the very top of a stack of blocks.
