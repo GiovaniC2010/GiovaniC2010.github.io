@@ -9,7 +9,7 @@
 - **Description:** An interactive desktop robot featuring dual round GC9A01 LCD eye displays for dynamic expressions, piezo audio feedback, and an integrated chess engine. 
 
 ### 🛠️ Interactive 3D Soldering Simulator 
-<img src="https://drive.google.com/uc?export=view&id=1ur1DOM70a1UyqvzwHSYM-ud-4WLjATQy" width="300">
+<img src="https://github.com/user-attachments/assets/YOUR_NEW_GITHUB_LINK_HERE" width="300">
 
 - **What Was Used:** Godot Engine 4, GDScript   
 - **Description:** A 3D soldering simulator featuring thermal transfer physics, solder wire melting, flux smoke particle systems, component lead trimming, and fume extraction mechanics.
