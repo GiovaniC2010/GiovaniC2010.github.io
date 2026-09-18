@@ -8,7 +8,7 @@ What Was Used: ESP32, GC9A01 Round Displays, Piezo Speaker, MCU-MAX Chess Engine
 Description: An interactive desktop robot featuring dual round GC9A01 LCD eye displays for dynamic expressions, piezo audio feedback, and an integrated chess engine.
 
 🛠️ Interactive 3D Soldering Simulator
-What Was Used: Godot Engine 4, GDScript
+What Was Used: Godot Engine 4, GDScript  
 
 Description: A 3D soldering simulator featuring thermal transfer physics, solder wire melting, flux smoke particle systems, component lead trimming, and fume extraction mechanics.
 
