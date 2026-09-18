@@ -7,117 +7,117 @@
   - [Headings](#headings)
   - [Text Formatting](#text-formatting)
 
---- 
+---
 
 ## Blocks
 
 ### Hat Block
 - **Name:** Hat Block
-- **Shape/Type:** Hat shape (curved top, notch on the bottom)
-- **What It Does:** Starts a script or program when a specific event happens (like pressing start or receiving a message). It always goes at the very top of a stack.
+- **Shape/Type:** Hat shape (rounded top, notch on the bottom)
+- **What It Does:** Starts a script when a specific event triggers it. It always goes at the very top of a stack of blocks.
 - **Example:** `when started`
 
 ### Stack / Command Block
 - **Name:** Stack / Command Block
 - **Shape/Type:** Rectangular with a notch on top and a bump on the bottom
-- **What It Does:** Tells the robot to perform a specific action. It connects above and below other blocks to execute commands step-by-step.
-- **Example:** `drive for [200] mm`
+- **What It Does:** Tells the robot to do a single action. It stacks top-to-bottom with other commands.
+- **Example:** `drive [forward] for [200] mm`
 
 ### C-Block
 - **Name:** C-Block (Control Block)
 - **Shape/Type:** Shaped like the letter "C"
-- **What It Does:** Holds other command blocks inside its loop or frame to repeat or conditionally run them.
+- **What It Does:** Holds other blocks inside its loop to repeat them or run them conditionally.
 - **Example:** `repeat [4]` or `if < > then`
 
 ### Reporter / Oval Block
 - **Name:** Reporter Block
-- **Shape/Type:** Oval / Rounded ends
-- **What It Does:** Reports or holds a value (like a number, text, or distance reading) and drops inside other blocks that accept inputs.
+- **Shape/Type:** Oval with rounded ends
+- **What It Does:** Stores or measures a value (like numbers or sensor readings) and drops into inputs on other blocks.
 - **Example:** `distance from [Distance Sensor] in mm`
 
 ### Boolean / Hexagonal Block
 - **Name:** Boolean Block
-- **Shape/Type:** Hexagonal (pointed ends)
-- **What It Does:** Reports a condition that can only be `TRUE` or `FALSE`. Fits into hexagonal slots inside control blocks like `if then` or `wait until`.
+- **Shape/Type:** Hexagonal with pointed sides
+- **What It Does:** Checks a condition and returns either TRUE or FALSE. Fits inside hexagonal slots on control blocks.
 - **Example:** `<Bumper Pressed?>`
 
 ### Repeat Block
 - **Name:** Repeat Block
 - **Shape/Type:** C-shaped control block
-- **What It Does:** Runs any commands placed inside its "C" body a set number of times.
-- **Example:** `repeat [4]` to drive in a square.
+- **What It Does:** Runs any blocks placed inside it for a set number of times.
+- **Example:** `repeat [4]` to draw a square or repeat a sequence.
 
 ### Wait Until Block
 - **Name:** Wait Until Block
 - **Shape/Type:** Stack block with a hexagonal input slot
-- **What It Does:** Pauses the program's execution on that line until the Boolean condition in its slot becomes `TRUE`.
+- **What It Does:** Pauses the program on that exact line until its Boolean condition turns TRUE.
 - **Example:** `wait until <Bumper Pressed?>`
 
 ### If Then Block
 - **Name:** If Then Block
 - **Shape/Type:** C-shaped control block (with a hexagonal slot for a condition)
-- **What It Does:** Checks a Boolean condition; if it is `TRUE`, it runs the code inside the C-shape. If `FALSE`, it skips the inside code.
+- **What It Does:** Checks a condition. If it is TRUE, it runs the code inside. If FALSE, it skips right past it.
 - **Example:** `if <Distance in mm < 200> then [turn right 90 deg]`
 
 ### Forever Block
 - **Name:** Forever Block
-- **Shape/Type:** C-shaped block without a bottom notch (it never ends)
-- **What It Does:** Repeats the code inside it continuously for as long as the project runs.
-- **Example:** `forever` checking sensor inputs to stop the robot from bumping into walls.
+- **Shape/Type:** C-shaped block without a bottom notch
+- **What It Does:** Loops the code inside continuously until the project is manually stopped.
+- **Example:** `forever` checking sensor inputs to keep from bumping walls.
 
 ---
 
 ## Concepts
 
 ### Sequence
-- **What It Means:** The specific order in which instructions are given to a computer or robot.
-- **In My Own Words:** Code runs top-to-bottom. If you swap the steps, the robot does things out of order and fails the task.
-- **Example:** Telling a robot to `drive forward` then `turn right` gets you to a different spot than `turn right` then `drive forward`.
+- **What It Means:** The specific top-to-bottom order in which commands run.
+- **In My Own Words:** If you change the order of your blocks, the robot will do steps out of order and miss its goal.
+- **Example:** Driving forward then turning right gets you to a totally different spot than turning right first and then driving.
 
 ### Parameters
-- **What It Means:** Inputs or values passed into a command block to change how it executes.
-- **In My Own Words:** The adjustable numbers or options inside a block that tweak what the robot actually does.
-- **Example:** In `drive for [200] mm`, changing `200` to `500` changes the distance parameter.
+- **What It Means:** Values or settings passed into a block to change how it behaves.
+- **In My Own Words:** The adjustable numbers or drop-down choices inside a block that control speed, distance, or angle.
+- **Example:** Changing the number in `drive for [200] mm` to `500` changes how far the robot moves.
 
 ### Loops / Iteration
-- **What It Means:** Repeating a sequence of code multiple times or indefinitely.
-- **In My Own Words:** Doing the same instructions again without having to write out the same blocks over and over.
-- **Example:** Using a `repeat 4` block to draw a square instead of stacking 4 sets of drive and turn blocks.
+- **What It Means:** Repeating a block of code multiple times.
+- **In My Own Words:** Running a set of instructions over and over without having to duplicate blocks in your workspace.
+- **Example:** Wrapping a `drive` and `turn` block inside a `repeat [4]` loop instead of snapping eight blocks together.
 
 ### Sensors
-- **What It Means:** Hardware devices that gather real-time data about the robot's surrounding environment.
-- **In My Own Words:** The robot's eyes, ears, and sense of touch so it knows what's happening around it.
-- **Example:** A Bumper Sensor detecting physical contact with a wall.
+- **What It Means:** Hardware that reads physical information from the environment.
+- **In My Own Words:** The robot's eyes and touch tools that let it react to the world around it.
+- **Example:** A Bumper Sensor detecting when the robot physically contacts a wall.
 
 ### Booleans & Conditions
-- **What It Means:** A True/False evaluation used to control decision-making logic in code.
-- **In My Own Words:** Asking a simple yes-or-no question so the robot can decide what step to take next.
-- **Example:** Checking if `<Bumper Pressed?>` yields `TRUE` (pressed) or `FALSE` (not pressed).
+- **What It Means:** A True/False evaluation used to make decisions in code.
+- **In My Own Words:** Asking a basic yes-or-no question so the program knows what branch of code to execute.
+- **Example:** Checking if `<Bumper Pressed?>` returns TRUE (pressed) or FALSE (not pressed).
 
 ### Sense → Think → Act
-- **What It Means:** The fundamental robotics control loop where a robot reads sensors, processes data, and responds.
-- **In My Own Words:** First gather info (Sense), figure out what it means using code (Think), then move or react (Act).
-- **Example:** Distance sensor sees wall (Sense) -> code sees distance < 50 mm (Think) -> motors stop (Act).
+- **What It Means:** The standard robotics loop where a robot reads data, decides what to do, and executes a physical movement.
+- **In My Own Words:** Read sensors (Sense), run code logic (Think), move motors (Act).
+- **Example:** Eye sensor spots a wall (Sense) -> program evaluates distance < 50 mm (Think) -> motors stop driving (Act).
 
 ### Comparisons
-- **What It Means:** Evaluating two numerical values using math operators like `<` (less than) or `>` (greater than).
-- **In My Own Words:** Comparing two numbers to see which is bigger, which outputs a `TRUE` or `FALSE` result.
-- **Example:** `< (Distance in mm) < (100) >` evaluates to `TRUE` if an object gets closer than 100 mm.
+- **What It Means:** Comparing two numerical values using math symbols like `<` or `>`.
+- **In My Own Words:** Checking which number is larger or smaller to generate a TRUE or FALSE output.
+- **Example:** `< (Distance in mm) < (100) >` outputs TRUE as soon as an obstacle gets closer than 100 mm.
 
 ### Coordinates
-- **What It Means:** A numerical system using X and Y values to mark precise locations on a grid map.
-- **In My Own Words:** X measures left/right and Y measures up/down so the robot knows its exact map position.
-- **Example:** Moving the VR robot to location (X: 0 mm, Y: 400 mm).
+- **What It Means:** An X and Y grid system used to mark exact positions on a map.
+- **In My Own Words:** X handles side-to-side positioning and Y handles up-and-down positioning on the playground field.
+- **Example:** Driving the robot directly to position `(X: 0 mm, Y: 400 mm)`.
 
 ### Conditionals
-- **What It Means:** Programming structures (like `if-then`) that execute code blocks only when certain conditions are met.
-- **In My Own Words:** Making a decision in code—"If this happens, then do that."
-- **Example:** `If <Eye Sensor sees Red> then [Stop driving]`.
+- **What It Means:** Code structures (like `if-then`) that execute actions only when conditions are met.
+- **In My Own Words:** Decision blocks—"If this sensor sees something, then perform this move."
+- **Example:** `if <Eye Sensor sees Red> then [stop drivetrain]`.
 
 ### Patterns
-- **What It Means:** Identifying repeated sequences or behaviors to simplify code and design better algorithms.
-- **In My Own Words:** Spotting identical steps in a challenge so you can use a loop or clean function instead of repeating blocks.
-- **Example:** Realizing a maze involves "drive forward, turn right" four times in a row.
+- **What It Means:** Spotting repeated steps or behaviors to make code cleaner.
+- **In My Own Words:** Finding actions that happen over and over so you can replace them with a loop.
+- **Example:** Seeing that navigating a maze consists of repeating "drive, turn right" four times in a row.
 
 ---
 
@@ -127,13 +127,13 @@
 <summary><strong>1. VR Robot + Playground</strong></summary>
 
 **Definition:**  
-A VR Robot is a virtual robot programmed inside a simulation environment. A Playground is the 3D virtual arena where the VR Robot drives and interacts.
+A VR Robot is a virtual robot programmed in a simulation. A Playground is the 3D virtual field where the VR Robot runs.
 
 **In My Own Words:**  
-The VR Robot is the digital bot you code, and the Playground is the map or field it moves around in.
+The VR Robot is the digital bot you program, and the Playground is the map or arena it moves around in.
 
 **Example:**  
-Loading the "Grid Map" Playground to test your VR Robot's movement algorithms.
+Opening the "Grid Map" Playground to test your robot's pathfinding code.
 
 </details>
 
@@ -141,13 +141,13 @@ Loading the "Grid Map" Playground to test your VR Robot's movement algorithms.
 <summary><strong>2. Programming Language + Project</strong></summary>
 
 **Definition:**  
-A Programming Language is a set of rules and syntax used to give instructions to a computer. A Project is the file containing the organized code blocks for a specific task.
+A Programming Language is the syntax and rules used to give instructions to a computer. A Project is the saved file containing your organized code.
 
 **In My Own Words:**  
-The language is how you speak to the robot (like VEXcode blocks), and the project is your saved file.
+The language is how you communicate with the robot (like VEXcode blocks), and the project is your saved code file.
 
 **Example:**  
-Opening your VEXcode Blocks project to program a maze-navigating robot.
+Saving your VEXcode Blocks project before running it in the simulator.
 
 </details>
 
@@ -155,13 +155,13 @@ Opening your VEXcode Blocks project to program a maze-navigating robot.
 <summary><strong>3. Behavior + Command</strong></summary>
 
 **Definition:**  
-A Behavior is an overall action performed by the robot (e.g., turning around). A Command is an individual instruction block that tells the robot to execute a step.
+A Behavior is an overall action done by the robot. A Command is an individual instruction block that tells the robot what to do.
 
 **In My Own Words:**  
-A command is a single line of code, while a behavior is the bigger action created by running commands.
+A command is one single block, while a behavior is the bigger result you see when those commands run together.
 
 **Example:**  
-`turn right 90 degrees` is a command; driving in a circle is a complex behavior.
+`turn right 90 degrees` is a command; weaving through an obstacle course is a behavior.
 
 </details>
 
@@ -169,13 +169,13 @@ A command is a single line of code, while a behavior is the bigger action create
 <summary><strong>4. Drivetrain</strong></summary>
 
 **Definition:**  
-The system of motors, wheels, and gears that enables a robot to move around its environment.
+The system of motors, wheels, and gears that allows a robot to drive and turn.
 
 **In My Own Words:**  
-The wheels and motors that make the robot drive, turn, and back up.
+The wheels and motors that control how the robot moves across the ground.
 
 **Example:**  
-Configuring the Drivetrain in VEXcode to set wheel travel and track width.
+Configuring the Drivetrain settings in VEXcode to match wheel size and width.
 
 </details>
 
@@ -183,13 +183,13 @@ Configuring the Drivetrain in VEXcode to set wheel travel and track width.
 <summary><strong>5. Loop + Iteration</strong></summary>
 
 **Definition:**  
-A Loop is a structure that repeats code. An Iteration is one single complete pass through that loop.
+A Loop is a structure that repeats code. An Iteration is one complete pass through that loop.
 
 **In My Own Words:**  
-The loop is the repeat block itself, and iteration is counting each cycle through the loop.
+The loop is the container block, and an iteration is counting each single turn through it.
 
 **Example:**  
-In a `repeat 4` block, finishing the square requires 4 total iterations.
+In a `repeat [4]` block, driving each side of a square counts as one iteration.
 
 </details>
 
@@ -197,13 +197,13 @@ In a `repeat 4` block, finishing the square requires 4 total iterations.
 <summary><strong>6. Sensor + Bumper Sensor</strong></summary>
 
 **Definition:**  
-A Sensor detects environmental inputs. A Bumper Sensor is a physical switch that detects physical contact when bumped.
+A Sensor gathers data from the environment. A Bumper Sensor is a physical switch that detects contact when bumped.
 
 **In My Own Words:**  
-A sensor collects info, and a bumper sensor specifically tells the robot when it hits an obstacle.
+A sensor reads surroundings, and a bumper sensor specifically detects physical crashes into objects.
 
 **Example:**  
-A Bumper Sensor sends a signal to stop the drivetrain the instant the robot bumps a wall.
+A Bumper Sensor signaling the robot to stop the instant it hits a wall.
 
 </details>
 
@@ -211,13 +211,13 @@ A Bumper Sensor sends a signal to stop the drivetrain the instant the robot bump
 <summary><strong>7. Boolean + Condition + TRUE/FALSE</strong></summary>
 
 **Definition:**  
-A Boolean is a data type with only two states: TRUE or FALSE. A Condition is a statement checked by code that returns a Boolean value.
+A Boolean is a data type with only two possible values: TRUE or FALSE. A Condition is a statement checked by code that outputs a Boolean.
 
 **In My Own Words:**  
-A condition asks a question, and the Boolean result is the TRUE or FALSE answer.
+A condition asks a question, and the Boolean is the TRUE or FALSE answer that comes back.
 
 **Example:**  
-Checking if `<Bumper Pressed?>`: if pressed, the state is TRUE; otherwise, it is FALSE.
+Checking `<Bumper Pressed?>`: if pressed it returns TRUE, otherwise FALSE.
 
 </details>
 
@@ -225,10 +225,10 @@ Checking if `<Bumper Pressed?>`: if pressed, the state is TRUE; otherwise, it is
 <summary><strong>8. Distance Sensor + Threshold</strong></summary>
 
 **Definition:**  
-A Distance Sensor uses light/ultrasonic waves to report the distance to an object. A Threshold is a set numerical value used to trigger an action when crossed.
+A Distance Sensor uses light/ultrasonic waves to report how far away an object is. A Threshold is a set target value used to trigger an action when crossed.
 
 **In My Own Words:**  
-The sensor measures distance, and the threshold is the cutoff line for taking action.
+The sensor measures distance, and the threshold is the specific cutoff distance where your robot reacts.
 
 **Example:**  
 Setting a threshold of 150 mm so the robot turns whenever the distance sensor reads less than 150 mm.
@@ -239,13 +239,13 @@ Setting a threshold of 150 mm so the robot turns whenever the distance sensor re
 <summary><strong>9. Coordinate Plane + X/Y Coordinates</strong></summary>
 
 **Definition:**  
-A Coordinate Plane is a 2D grid used for mapping position. X-axis and Y-axis are horizontal and vertical reference lines, while X/Y coordinates pinpoint exact locations.
+A Coordinate Plane is a 2D grid mapping positions. X and Y coordinates pinpoint exact locations using horizontal (X) and vertical (Y) axes.
 
 **In My Own Words:**  
-A grid map where X measures horizontal location and Y measures vertical location.
+A grid map where X tracks left/right movement and Y tracks up/down movement.
 
 **Example:**  
-The center of the VR playground grid plane sits at position (X: 0 mm, Y: 0 mm).
+The center of the VR playground grid sits at `(X: 0 mm, Y: 0 mm)`.
 
 </details>
 
@@ -253,13 +253,13 @@ The center of the VR playground grid plane sits at position (X: 0 mm, Y: 0 mm).
 <summary><strong>10. Location Sensor</strong></summary>
 
 **Definition:**  
-A sensor that reads the robot’s current X and Y position and heading angle relative to the Playground grid.
+A sensor that reads the robot's exact X and Y position and heading angle on the grid.
 
 **In My Own Words:**  
-The robot's built-in GPS that tells it its exact spot on the map.
+The robot's built-in GPS that reports its exact spot on the map.
 
 **Example:**  
-Using the Location Sensor to check if X < 500 mm before making a turn.
+Checking the Location Sensor to see if `X < 500 mm` before turning a corner.
 
 </details>
 
@@ -267,13 +267,13 @@ Using the Location Sensor to check if X < 500 mm before making a turn.
 <summary><strong>11. Comment</strong></summary>
 
 **Definition:**  
-A text note added inside the project code to explain what the program does; it is ignored by the robot during execution.
+A note added inside code to explain what sections do; it is completely ignored when the robot executes the program.
 
 **In My Own Words:**  
-Notes you leave in your code for yourself or teammates to explain how things work.
+Notes you leave in your project to remind yourself or partners how your code works.
 
 **Example:**  
-Adding a comment block reading `// Drive to first obstacle` above a section of movement blocks.
+Placing a comment saying `// Search for green disk` above a search algorithm block.
 
 </details>
 
@@ -281,13 +281,13 @@ Adding a comment block reading `// Drive to first obstacle` above a section of m
 <summary><strong>12. Eye Sensor</strong></summary>
 
 **Definition:**  
-An optical sensor that detects whether an object is present and can identify specific colors (such as Red, Green, Blue, or Black).
+An optical sensor that detects if an object is present and identifies colors like Red, Green, Blue, or Black.
 
 **In My Own Words:**  
-A color-picker sensor that lets the robot see objects and detect what color they are.
+A color sensor that tells the robot what color object or line it is looking at.
 
 **Example:**  
-Using the Down Eye Sensor to detect when the robot reaches a red line on the floor.
+Using the Down Eye Sensor to stop driving when the robot sees a red line on the playground floor.
 
 </details>
 
@@ -295,13 +295,13 @@ Using the Down Eye Sensor to detect when the robot reaches a red line on the flo
 <summary><strong>13. Conditional Statement</strong></summary>
 
 **Definition:**  
-A programming instruction (like `if-then` or `if-then-else`) that performs different actions depending on whether a condition evaluates to TRUE or FALSE.
+A programming structure (like `if-then` or `if-then-else`) that executes different actions depending on whether a condition is TRUE or FALSE.
 
 **In My Own Words:**  
-A block that lets your code make decisions on the fly depending on what's happening.
+A block that lets your code make decisions based on changing conditions.
 
 **Example:**  
-Using an `if-then-else` statement to drive forward if the path is clear, or turn if an obstacle appears.
+Using an `if-then-else` statement to drive forward if the path is clear, or turn if an obstacle is in the way.
 
 </details>
 
