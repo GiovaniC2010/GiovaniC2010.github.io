@@ -27,4 +27,3 @@
 
 ## Notebook
 [Click here to go to my notebook → Notebook](notebook.md)
-  
