@@ -8,10 +8,10 @@ Hello! My name is Giovani. I am a high school junior and builder focused on robo
 - [Embedded Systems & Sensors](#embedded-systems--sensors)
 - [Game Dev & Simulations](#game-dev--simulations)
 - [PCB & Hardware Design](#pcb--hardware-design)
-
+ 
 ---
 
-## Featured Robotics Projects
+## Featured Robotics Projects 
 
 ### 🤖 Herbie — Desktop Robot Companion
 * **Tech Stack:** Raspberry Pi 4, ESP32-S3, Touch LCD, Python, C++
